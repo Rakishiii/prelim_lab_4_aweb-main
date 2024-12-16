@@ -1,0 +1,122 @@
+/* Global Styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1em;
+  }
+  
+  /* Layout Helpers */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('/images/iphone14promax.jpeg') center/cover no-repeat; /* Add your background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #ff6f00; /* Apple-like orange */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4500;
+  }
+
+  /* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .feature-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature-item h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item button {
+    background-color: #007aff; /* Apple blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-item button:hover {
+    background-color: #005bb5;
+  }
+  

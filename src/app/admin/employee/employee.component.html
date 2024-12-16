@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h2 class="text-center">Employee List</h2>
+    
+ 
+    <button class="btn btn-primary mb-3" (click)="showEmployees = !showEmployees">
+    {{ showEmployees ? 'Hide Employee List' : 'Show Employee List' }}
+    </button>
+    
+ 
+    <div *ngIf="showEmployees; else noEmployees">
+    <table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+    <th>#</th>
+    <th>Full Name</th>
+    <th>Gender</th>
+    <th>Email</th>
+    <th>Employment Status</th>
+    <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees">
+    <td>{{ employee.number }}</td>
+    <td>{{ employee.fullName }}</td>
+    <td>{{ employee.gender }}</td>
+    <td>{{ employee.email }}</td>
+    <td>{{ employee.employmentStatus }}</td>
+    <td>{{ employee.salary | currency }}</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    
+    <ng-template #noEmployees>
+    <p class="text-center text-danger">No employees to display.</p>
+    </ng-template>
+    </div>
+    
